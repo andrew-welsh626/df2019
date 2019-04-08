@@ -1,4 +1,4 @@
-# DataFest 2019: "Name in Beta"
+# DataFest 2019 @ Ohio State: "Name in Beta"
 
 (Fill in with details about challenge after ASA releases stuff at the start of May, and also details not included in slides)
 
