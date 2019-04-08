@@ -24,7 +24,7 @@ end
 - Less fatigue leads to higher chance of winning
   - Based on only 38 observations of games
   
-  ![[residuals plot]](https://github.com/andrew-welsh626/df2019/raw/master/presentation/fatigue-residuals.png "Fatigue Residuals")
-  PlayerID
+![[residuals plot]](https://github.com/andrew-welsh626/df2019/raw/master/presentation/fatigue-residuals.png "Fatigue Residuals")
+ PlayerID
 
   ![[residuals plot]](https://github.com/andrew-welsh626/df2019/raw/master/presentation/box-plot-weighted-team-fatigue-game-outcome.png "Weighted Team Fatigue aggregated by Game")
