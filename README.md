@@ -1,9 +1,9 @@
 # DataFest 2019 @ Ohio State
-## "Name in Beta": *1st Place in Judge's Choice* 
+## "Name in Beta": *First Place in Judge's Choice* 
 
-The data set for the American Statistical Association's (ASA) 2019 DataFest competition came from a women's rugby team at the Canadian Sport Institute. There are four separate csv files:
+The data set for the American Statistical Association's (ASA) 2019 DataFest competition came from a women's rugby team at the Canadian Sports Institute. There were four separate csv files:
 
-**game.csv**: Meta-information about games and participating teams, and game outcome.
+**game.csv**: Meta-information about games, participating teams, and game outcomes.
 
 GameID	Date	Tournament	TournamentGame	Team	Opponent	Outcome	TeamPoints	TeamPointsAllowed
 
