@@ -3,14 +3,25 @@
 
 The data set for the American Statistical Association's (ASA) 2019 DataFest competition came from a women's rugby team at the Canadian Sport Institute. There are four separate csv files:
 
-**game.csv**: Meta-information about games and participating teams, and game outcome. 
+**game.csv**: Meta-information about games and participating teams, and game outcome.
+
 GameID	Date	Tournament	TournamentGame	Team	Opponent	Outcome	TeamPoints	TeamPointsAllowed
+
+
 **rpe.csv**: Information about physical exertion of during game/practice. Some self-reported features. 
+
 Date	PlayerID	Training	SessionType	Duration	RPE	SessionLoad	DailyLoad	AcuteLoad	ChronicLoad	AcuteChronicRatio	ObjectiveRating	FocusRating	BestOutOfMyself
+
+
 **wellness.csv**: Self-reported information about the player's health and internal state. Asked before the game.
+
 Date	PlayerID	Fatigue	Soreness	Desire	Irritability	BedTime	WakeTime	SleepHours	SleepQuality	MonitoringScore	Pain	Illness	Menstruation	Nutrition	NutritionAdjustment	USGMeasurement	USG	TrainingReadiness
+
+
 **gps.csv**: Information on player location and movement (most of the data). 
+
 GameID  Half	PlayerID	FrameID	Time	GameClock	Speed	AccelImpulse	AccelLoad	AccelX	AccelY	AccelZ	Longitude	Latitude
+
 
 ## Team Problem Statements
 - We need predict the self-reported fatigue of individual players.
@@ -44,6 +55,7 @@ From our correlation tests, teams should focus on Soreness, Desire, Irritability
 Using our team fatigue calculations aggregated by game outcome (W/L), we're able to see how team fatigue can predict game outcome.
 
 ![[residuals plot]](https://github.com/andrew-welsh626/df2019/raw/master/presentation/box-plot-weighted-team-fatigue-game-outcome.png "Weighted Team Fatigue aggregated by Game")
+
 **Note**: The fatigue scale from the raw data is more of an "energy" scale. A *higher* number indicates *less* fatigue, and a *lower* number indicates *more* fatigue.
 
 Based on 38 observations of games, we can see that less fatigue leads to a higher chance of winning.
