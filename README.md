@@ -1,6 +1,6 @@
-# DataFest 2019: "Name in Beta"
+# DataFest 2019 @ Ohio State: "Name in Beta"
 
-(Fill in with details about challenge after ASA releases stuff at the start of May)
+(Fill in with details about challenge after ASA releases stuff at the start of May, and also details not included in slides)
 
 ## Problem
 - How do we predict the self-reported fatigue of individual players?
@@ -16,13 +16,15 @@ for (game <- 1 to numberOfGames):
     (PlayerTime[game] / TotalTeamTime ) * PlayerFatigue[game]
 end
 ```
-[https://lh4.googleusercontent.com/xNyYZoWmYJL6JNazboml1Jcx3KacpOBbw3aXM39edzISdc_-NQyfV-xfdnzKVwJztIwHhkeoNkWOTSONbF0Sif1BGmmeeZG8J7bPTU3q4PKOPMOVh_qfKc6UwM0le4yxDNCVyZGJL68]()
+
+![[residuals plot]](https://github.com/andrew-welsh626/df2019/raw/master/presentation/weighted-team-fatigue.png "Fatigue Residuals")
 
 ## Results
 - Teams should focus on Soreness, Desire, Irritability, SleepHours, SleepQuality
 - Less fatigue leads to higher chance of winning
   - Based on only 38 observations of games
   
-[https://lh4.googleusercontent.com/tK_kLeKGFEByLR0Er7r7T7FETwonIC0L4WlZlACCs-B8VM947wPVQJ6j5fBLkx9GxGM6tkbCaXPJlaG8qEHIsxLTpbIxv9hj6jmzKUI]()
+![[residuals plot]](https://github.com/andrew-welsh626/df2019/raw/master/presentation/fatigue-residuals.png "Fatigue Residuals")
+ PlayerID
 
-[https://lh5.googleusercontent.com/M7rUpVm0Fnw8DDPPSCpZ0078-e2rZKBrrdEdT_i68GL7hTPJAh0nWWBLk2FAK7efhdDWCNdtaOsC3U8at1y1o9GQOwp2BlTpP2ksTHrbwYXd1PqD3txeDKezGvLm_fmWoMhI8H2F3Qk]()
+  ![[residuals plot]](https://github.com/andrew-welsh626/df2019/raw/master/presentation/box-plot-weighted-team-fatigue-game-outcome.png "Weighted Team Fatigue aggregated by Game")
