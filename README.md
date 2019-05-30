@@ -52,7 +52,7 @@ From our correlation tests, teams should focus on Soreness, Desire, Irritability
 
 ![[residuals plot]](https://github.com/andrew-welsh626/df2019/raw/master/presentation/fatigue-residuals.png "Fatigue Residuals")
 
-Using our team fatigue calculations aggregated by game outcome (W/L), we're able to see how team fatigue can predict game outcome.
+Using our team fatigue calculations aggregated by game outcome (W/L), we're able to see how team fatigue can predict game outcome:
 
 ![[residuals plot]](https://github.com/andrew-welsh626/df2019/raw/master/presentation/box-plot-weighted-team-fatigue-game-outcome.png "Weighted Team Fatigue aggregated by Game")
 
