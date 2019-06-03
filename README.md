@@ -1,5 +1,6 @@
 # DataFest 2019 @ Ohio State
-## "Name in Beta": *First Place in Judge's Choice* 
+## "Name in Beta": *First Place in Judge's Choice*
+*Duncan Capp, Brittany Shine, Justin Skirda, Troy Stein, Andrew Welsh*
 
 The data set for the American Statistical Association's (ASA) 2019 DataFest competition came from a women's rugby team at the Canadian Sports Institute. There were four separate csv files:
 
