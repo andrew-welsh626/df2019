@@ -29,7 +29,7 @@ GameID  Half	PlayerID	FrameID	Time	GameClock	Speed	AccelImpulse	AccelLoad	AccelX
 - We aim to use the self-reported fatigue of players to predict game outcome.
 
 ## Methods 
-To start, we created single linear regression (SLR) models between Fatigue and each other feature. From there, we chose one random linear regression model to perform an F-test on each other model. We repeated the same F-test procedure with those that had a p-value greater than a siginificance level of α = 0.05 in the first round of F-tests. This process left us with five features, which we use in our multiple linear regression (MLR) model to predict Fatigue:
+To start, we created single linear regression (SLR) models between Fatigue and each other feature. From there, we used the Analysis of Variance (ANOVA) technique and t-tests with significance levels of α = 0.05 to select features. The features with non-significant t-values were taken out. F-tests on the deviance residuals before and after a main effect was added helped us eliminate more features (if non-significant, thrown out). This process left us with five features, which we used in our multiple linear regression (MLR) model to predict Fatigue:
 
 `Fatigue per player per game ~ Soreness + Desire + Irritability + SleepHours + SleepQuality`
 
@@ -63,7 +63,7 @@ Based on 38 observations of games, we can see that less fatigue leads to a highe
 
 ## Things Learned / Future Work
 - General R-programming skills, competency in Tidyverse packages and using piping, working with regression models and measuring their effectiveness.
-- We should have checked for normality on each feature in our F-tested SLR models. The easiest way to do this is a visual inspection via a [QQ-plot](http://www.sthda.com/english/wiki/qq-plots-quantile-quantile-plots-r-base-graphs), but [Levene's test](https://en.wikipedia.org/wiki/Levene%27s_test) should be used if there is any doubt.
+- We should have checked for normality on each feature in our F-tested and t-tested SLR models. The easiest way to do this is a visual inspection via a [QQ-plot](http://www.sthda.com/english/wiki/qq-plots-quantile-quantile-plots-r-base-graphs), but [Levene's test](https://en.wikipedia.org/wiki/Levene%27s_test) should be used if there is any doubt.
 - We should have built SLR models that fit to our Team Fatigue value and picked out features from F-tests from there, since Team Fatigue is the value we actually use to predict game outcome.
   - `Fatigue per team per game ~ Soreness + Desire + Irritability + SleepHours + SleepQuality`.
   - Maybe other features would have been chosen from our F-test procedure on all possible SLR models fitted to Team Fatigue?
