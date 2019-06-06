@@ -29,7 +29,7 @@ GameID  Half	PlayerID	FrameID	Time	GameClock	Speed	AccelImpulse	AccelLoad	AccelX
 - We aim to use the self-reported fatigue of players to predict game outcome.
 
 ## Methods 
-To start, we created single linear regression (SLR) models between Fatigue and each other feature. From there, we used t-tests with significance levels of α = 0.05 to select features. The features with non-significant t-values were taken out. The Analysis of Variance (ANOVA) technique was then used to eliminate more variables. A feature was not used if the F-test on the deviance residual before and after a main effect was added did not have a significant difference. This process left us with five features, which we used in our multiple linear regression (MLR) model to predict Fatigue:
+To start, we created single linear regression (SLR) models between Fatigue and each other feature. From there, we used t-tests with significance levels of α = 0.05 to select features. The features with non-significant t-values were taken out. The Analysis of Variance (ANOVA) technique was then used to eliminate more variables. A feature was not used if the F-test on the deviance residual did not have a significant difference before and after a main effect was added. This process left us with five features, which we used in our multiple linear regression (MLR) model to predict Fatigue:
 
 `Fatigue per player per game ~ Soreness + Desire + Irritability + SleepHours + SleepQuality`
 
