@@ -66,5 +66,5 @@ Based on 38 observations of games, we can see that less fatigue leads to a highe
 - We should have checked for normality on each feature in our F-tested and t-tested SLR models. The easiest way to do this is a visual inspection via a [QQ-plot](http://www.sthda.com/english/wiki/qq-plots-quantile-quantile-plots-r-base-graphs), but [Levene's test](https://en.wikipedia.org/wiki/Levene%27s_test) should be used if there is any doubt.
 - We should have built SLR models that fit to our Team Fatigue value and picked out features from ANOVA and t-tests from there, since Team Fatigue is the value we actually use to predict game outcome.
   - `Fatigue per team per game ~ Soreness + Desire + Irritability + SleepHours + SleepQuality`.
-  - Maybe other features would have been chosen from our F-test procedure on all possible SLR models fitted to Team Fatigue?
+  - Maybe other features would have been chosen from our ANOVA and F-test procedures?
   
