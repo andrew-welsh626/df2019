@@ -25,7 +25,7 @@ GameID  Half	PlayerID	FrameID	Time	GameClock	Speed	AccelImpulse	AccelLoad	AccelX
 
 
 ## Team Problem Statements
-- We need predict the self-reported fatigue of individual players.
+- We aim to predict the self-reported fatigue of individual players.
 - We aim to use the self-reported fatigue of players to predict game outcome.
 
 ## Methods 
