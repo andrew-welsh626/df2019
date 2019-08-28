@@ -9,7 +9,7 @@ The data set for the American Statistical Association's (ASA) 2019 DataFest comp
 GameID	Date	Tournament	TournamentGame	Team	Opponent	Outcome	TeamPoints	TeamPointsAllowed
 
 
-**rpe.csv**: Information about physical exertion of during game/practice. Some self-reported features. 
+**rpe.csv**: Information about physical exertion during game/practice. Some self-reported features. 
 
 Date	PlayerID	Training	SessionType	Duration	RPE	SessionLoad	DailyLoad	AcuteLoad	ChronicLoad	AcuteChronicRatio	ObjectiveRating	FocusRating	BestOutOfMyself
 
